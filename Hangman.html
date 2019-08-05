@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hangman</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js/"></script>
+  <link href="css/project.css" rel="stylesheet">
+</head>
+
+<div class="fixed-top">
+  <header class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="social-network">
+            <li><a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://github.com/MeesMD"><i class="fa fa-github"></i></a></li>
+            <li><a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://www.linkedin.com/in/mees-dekker-68aba314a/"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="text-transform: uppercase;">Mees Dekker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="index.html">Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="aboutMe.html">About me</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="index.html#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<body>
+  <div class="Item_wrapper">
+    <a href="javascript:history.back()" class="button">Back</a>
+    <div class="Item_Title">
+      <span>Hangman</span>
+    </div>
+    <div class="Item">
+      <div class="Item_video">
+        <img src="media/gif/Hangman.gif"></img>
+      </div>
+
+      <div class="Item_Content_container">
+
+        <div class="Item_Content">
+          <p id="item_header">About the project:</p>
+          <p id="item_text">
+            This project is a recreation of the Hangman game made in C++.<br><br>
+            In this console application you can modify the word you have to guess, if you play the game all the letters in the word are displayed as a *, This application also keeps track of how many wrong guesses you made and if you alreay guessed the letter you entered.
+            </p>
+
+              <p id="item_header">My Contribution:</p>
+                <ul class="a">
+                  <li>I made the encryption so that the word you entered will be displayed as * and will turn into the letter of the word if you guessed it.</li>
+                  <li>I made the trackers that keeps track if you guessed a letter, if you guessed wrong and if you already guessed that letter.</li>
+                </ul>
+        </div>
+
+        <div class="Item_Content">
+
+          <p id="item_header">Status:</p>
+          <p id="item_text">Finished</p>
+
+          <p id="item_header">Engine:</p>
+          <p id="item_text">-</p>
+
+          <p id="item_header">Language:</p>
+          <p id="item_text">C++.</p>
+
+          <p id="item_header">Team:</p>
+          <p id="item_text">1 Game Developers.</p>
+
+            <p id="item_header">Links:</p>
+
+            <div class="item_download">
+              <a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://github.com/MeesMD/Hangman"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h5>Contact</h5>
+          <hr class="light">
+          <p>meesmilan@hotmail.com</p>
+        </div>
+        <div class="col-md-6 social padding">
+          <h5>Social Media</h5>
+          <hr class="light">
+          <a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://github.com/MeesMD"><i class="fa fa-github"></i></a>
+          <a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://www.linkedin.com/in/mees-dekker-68aba314a/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="col-12">
+          <hr class="light-100">
+          <h5>&copy; meesdekker.nl</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="javascript/linkScrollOtherPage.js"></script>
+</body>
+
+</html>

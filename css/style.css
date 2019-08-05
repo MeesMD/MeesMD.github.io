@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+#home{
+  background-image: linear-gradient(to top, #00e68a 20%, black 80%);
+  height: 100%;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapperInner {
+    overflow-y: scroll; overflow-x:hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -1px;
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+.ml11 {
+  color: white;
+  font-weight: 900;
+  font-size: 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml12 {
+  color: white;
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+/*
+headeer top
+*/
+.topbar{
+  background-color: #212529;
+  padding: 0;
+}
+
+.topbar .container .row {
+  margin:-7px;
+  padding:0;
+}
+
+.topbar .container .row .col-md-12 {
+  padding:0;
+}
+
+.topbar p{
+  margin:0;
+  display:inline-block;
+  font-size: 13px;
+  color: #f1f6ff;
+}
+
+.topbar p > i{
+  margin-right:5px;
+}
+.topbar p:last-child{
+  text-align:right;
+}
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+#nav-link:hover {
+  color: rgba(0, 230, 138, 1);
+}
+
+#icon-link:hover {
+  color: rgba(0, 230, 138, 1);
+}
+
+.topbar li.topbar {
+    display: inline;
+    padding-right: 18px;
+    line-height: 52px;
+    transition: all .3s linear;
+}
+
+.topbar ul.info i {
+    color: #131313;
+    font-style: normal;
+    margin-right: 8px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.topbar ul.info li {
+    float: right;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 44px;
+}
+
+.topbar ul.info i span {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    padding-left: 18px;
+}
+
+ul.social-network {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+ul.social-network li {
+  border:none;
+  margin:0;
+}
+
+ul.social-network li i {
+  margin:0;
+}
+
+ul.social-network li {
+    display:inline;
+    margin: 0 5px;
+    border: 0px solid #2D2D2D;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    vertical-align: baseline;
+    color: #000;
+}
+
+ul.social-network {
+  list-style: none;
+  margin: 0px 0 20px -50px;
+  float: right;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: .3s ease-out;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+.bg-image-full {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.bg-dark {
+    background-color: #222!important;
+}
+
+.mx-background-top-linear {
+    background: -webkit-linear-gradient(45deg, rgba(0, 230, 138, 1) 48%, #1b1e21 48%);
+    background: -webkit-linear-gradient(left, rgba(0, 230, 138, 1) 48%, #1b1e21 48%);
+    background: linear-gradient(45deg, rgba(0, 230, 138, 1) 48%, #1b1e21 48%);
+}
+
+
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+.landing-text h1{
+  font-size: 500%;
+  font-weight: 700;
+}
+
+.welcome {
+  border-bottom: 2px solid #b4b4b4;
+  width: 55%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+#projects {
+  margin-bottom: 100px;
+}
+
+.projects {
+  padding: 5% 0 5% 0;
+}
+
+.col-md-3 {
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-img-top  {
+ height: 300px;
+ object-fit:cover;
+}
+
+footer {
+  width: 100%;
+  background-color: #212529;;
+  padding: 2% 2% 0 2%;
+  color: #FFF;
+}
+
+.fa {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 30px
+}
+
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 50%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .landing-text h1{
+    font-size: 300%;
+  }
+
+  .fa {
+    font-size: 30px;
+  }
+
+  #nav-link {
+    color: black;
+  }
+
+  #nav-link:hover {
+    color: white;
+  }
+
+  .card-img-top img {
+   width: 80%;
+   height: auto;
+   object-fit:cover;
+ }
+
+  .ml11 {
+    color: white;
+    font-weight: 900;
+    font-size: 3.6em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ml12 {
+    color: white;
+    font-weight: 200;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navbar-brand {
+    font-size: 15px;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+
+  .landing-text h1{
+    font-size: 300%;
+  }
+
+  .fa {
+    font-size: 30px;
+  }
+
+  #nav-link {
+    color: black;
+  }
+
+  #nav-link:hover {
+    color: white;
+  }
+  .card-img-top{
+   width: 100%;
+   height: auto;
+   object-fit:cover;
+ }
+
+  .ml11 {
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ml12 {
+    color: white;
+    font-weight: 200;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+  }
+
+  .navbar-brand {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

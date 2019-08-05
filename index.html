@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js/"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<div class="fixed-top">
+  <header class="topbar">
+    <div class="container">
+      <div class="row">
+        <!-- social icon-->
+        <div class="col-sm-12">
+          <ul class="social-network">
+            <li><a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://github.com/MeesMD"><i class="fa fa-github"></i></a></li>
+            <li><a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://www.linkedin.com/in/mees-dekker-68aba314a/"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="text-transform: uppercase;"> Mees Dekker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item active">
+            <a id="nav-link" class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="aboutMe.html">About me</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<body>
+  <div class="waveAnimation">
+    <div class="waveWrapperInner bgTop">
+      <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+      <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+      <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+    </div>
+  </div>
+
+  <div id="home">
+    <h1 class="ml11">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">Mees Dekker</span>
+      </span>
+    </h1>
+    <script type="text/javascript" src="javascript/textAppearUpper.js"></script>
+
+    <h1 align="center" class="ml12">Game Developer</h1>
+    <script type="text/javascript" src="javascript/textAppearUnder.js"></script>
+  </div>
+
+  <div id="projects"></div>
+  <div class="welcome">
+    <div class="col-12">
+      <h1 class="display-8">My Projects</h1>
+    </div>
+  </div>
+
+  <div class="projects">
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-3">
+          <a href="VRInterface.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/sao.jpg">
+              <div class="card-body">
+                <h4 class="card-title">VR Interface</h4>
+                <span class="badge badge-info">Unity</span>
+                <span class="badge badge-info">C#</span>
+                <span class="badge badge-info">Leapmotion</span>
+                <span class="badge badge-info">HTC Vive</span><br><br>
+                <a href="VRInterface.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="volvoAr.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/volvoAR.png" onmouseover="this.src='media/img/volvoAR.png'" onmouseout="this.src='media/img/volvoAR.png'">
+              <div class="card-body">
+                <h4 class="card-title">Ar Volvo</h4>
+                <span class="badge badge-info">SparkAR</span>
+                <span class="badge badge-info">Javascript</span><br><br>
+                <a href="volvoAr.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="fashionFilter.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/fashionFilter.png" onmouseover="this.src='media/img/fashionFilter.png'" onmouseout="this.src='media/img/fashionFilter.png'">
+              <div class="card-body">
+                <h4 class="card-title">Ar Fashion Filter</h4>
+                <span class="badge badge-info">SparkAR</span>
+                <span class="badge badge-info">Javascript</span><br><br>
+                <a href="fashionFilter.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--<div class="col-md-3">
+          <a href="battleShip.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/workInProgress.png" onmouseover="this.src='media/img/workInProgress.png'" onmouseout="this.src='media/img/workInProgress.png'">
+              <div class="card-body">
+                <h4 class="card-title">Hololens Battleship</h4>
+                <span class="badge badge-info">Unity</span>
+                <span class="badge badge-info">C#</span>
+                <span class="badge badge-info">Vuforia</span>
+                <span class="badge badge-info">Hololens</span><br><br>
+                <a href="battleShip.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>-->
+        <div class="col-md-3">
+          <a href="VREscapeRoom.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/VrEscapeRoom.PNG" onmouseover="#" onmouseout="this.src='media/img/VrEscapeRoom.PNG'">
+              <div class="card-body">
+                <h4 class="card-title">VR Escape Room</h4>
+                <span class="badge badge-info">Unity</span>
+                <span class="badge badge-info">C#</span>
+                <span class="badge badge-info">HTC Vive</span><br><br>
+                <a href="VREscapeRoom.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="PlantAR.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/workInProgress.png" onmouseover="this.src='media/img/workInProgress.png'" onmouseout="this.src='media/img/workInProgress.png'">
+              <div class="card-body">
+                <h4 class="card-title">Ar Plant</h4>
+                <span class="badge badge-info">8th Wall</span>
+                <span class="badge badge-info">Javascript</span>
+                <span class="badge badge-info">A-Frame</span><br><br>
+                <a href="PlantAR.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="AngryBirds.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/AngryBirds.png" onmouseover="this.src='media/gif/AngryBirds.gif'" onmouseout="this.src='media/img/AngryBirds.png'">
+              <div class="card-body">
+                <h4 class="card-title">Angry Birds</h4>
+                <span class="badge badge-info">Unity</span>
+                <span class="badge badge-info">C#</span><br><br>
+                <a href="AngryBirds.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="cubeWave.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/CubeWave.png" onmouseover="this.src='media/gif/CubeWave.gif'" onmouseout="this.src='media/img/CubeWave.png'">
+              <div class="card-body">
+                <h4 class="card-title">Cube Wave</h4>
+                <span class="badge badge-info">Javascript</span>
+                <span class="badge badge-info">P5</span><br><br>
+                <a href="cubeWave.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="mineSweeper.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/MineSweeper.png" onmouseover="this.src='media/gif/mineSweeper.gif'" onmouseout="this.src='media/img/MineSweeper.png'">
+              <div class="card-body">
+                <h4 class="card-title">Mine Sweeper</h4>
+                <span class="badge badge-info">Javascript</span>
+                <span class="badge badge-info">Processing3</span><br><br>
+                <a href="mineSweeper.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="hexagonGrid.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/hexagonGrid.PNG" onmouseover="this.src='media/gif/hexagonGrid.gif'" onmouseout="this.src='media/img/hexagonGrid.PNG'">
+              <div class="card-body">
+                <h4 class="card-title">Hexagon Grid</h4>
+                <span class="badge badge-info">Javascript</span>
+                <span class="badge badge-info">Processing3</span><br><br>
+                <a href="hexagonGrid.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="Hangman.html">
+            <div class="card">
+              <img class="card-img-top" src="media/img/Hangman.png" onmouseover="this.src='media/gif/Hangman.gif'" onmouseout="this.src='media/img/Hangman.png'">
+              <div class="card-body">
+                <h4 class="card-title">Hangman</h4>
+                <span class="badge badge-info">C++</span><br><br>
+                <a href="Hangman.html" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h5>Contact</h5>
+          <hr class="light">
+          <p>meesmilan@hotmail.com</p>
+        </div>
+        <div class="col-md-6 social padding">
+          <h5>Social Media</h5>
+          <hr class="light">
+          <a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://github.com/MeesMD"><i class="fa fa-github"></i></a>
+          <a id="icon-link" target="_blank" class="waves-effect waves-dark" href="https://www.linkedin.com/in/mees-dekker-68aba314a/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="col-12">
+          <hr class="light-100">
+          <h5>&copy; meesdekker.nl</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="javascript/linkScroll.js"></script>
+</body>
+
+</html>
