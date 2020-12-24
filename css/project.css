@@ -214,8 +214,7 @@ ul.social-network {
   margin: 0 auto;
   box-sizing: border-box;
   display: block;
-  border: 2px solid black;
-  margin-bottom: 2px;
+  border: none;
   width: 90%;
   height: 550px;
   object-fit: cover;
