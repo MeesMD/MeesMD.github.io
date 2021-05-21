@@ -228,9 +228,9 @@ ul.social-network {
 }
 
 .Item_Content img{
-  width: 100%;
+  width: 70%;
   height: auto;
-  margin: 70px 0px 140px 0px;
+  margin: 70px 0px 50px 0px;
 }
 
 #item_header {
