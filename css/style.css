@@ -393,23 +393,21 @@ hr.light-100 {
 
   .ml11 {
     color: white;
-    font-weight: 900;
-    font-size: 3em;
+    font-weight: 500;
+    font-size: 3.4em;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .ml12 {
     color: white;
     font-weight: 200;
-    font-size: 1em;
+    font-size: 0.7em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     position: absolute;
     top: 60%;
-    left: 20%;
   }
 
   .navbar-brand {
